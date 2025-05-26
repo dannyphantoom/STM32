@@ -23,7 +23,7 @@ int main(void){
   GPIO_CRH &= ~(0xF << 20);
   GPIO_CRH |= (0x2 << 20);
 
-  while(1){
+  for(int i = 0; i < 10; ++i){
     GPIOC_ODR &= ~LED_PIN;
     delay(1000);
     GPIOC_ODR |= LED_PIN;
