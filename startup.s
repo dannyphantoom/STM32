@@ -9,7 +9,8 @@
 
 .text
 _start:
-    bl main 
+    bl main
 
-loop:
-    b loop
+halt:
+    wfi
+    b halt
