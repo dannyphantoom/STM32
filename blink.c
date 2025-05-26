@@ -8,7 +8,7 @@
 #define GPIOC_ODR         (*(volatile unsigned int*)(GPIOC_BASE + 0x0C))
 
 #define RCC_IOPEN         (1 << 4)
-#define LED_PIN           (1 << 23)
+#define LED_PIN           (1 << 13)
 
 
 void delay(volatile unsigned int t){
