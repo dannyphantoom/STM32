@@ -19,4 +19,8 @@ blink.bin: blink.elf
 clean:
 	rm -f blink.o startup.o blink.elf blink.bin
 
-.PHONY: all clean
+.PHONY: all clean run
+
+run: blink.bin
+	st-flash write blink.bin 0x8000000
+
